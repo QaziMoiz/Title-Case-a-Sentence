@@ -1,0 +1,12 @@
+var str = "I'm a little tea pot";
+
+//var a = str.split(/\b(\w)/g);
+var regexp = /\b(\w)/g;
+var a = str.toLowerCase();
+var b = a.replace(regexp,replacer);
+console.log(b);
+function replacer(match){
+ return match.toUpperCase();
+  //console.log($1);
+}
+
